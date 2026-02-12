@@ -6,12 +6,6 @@ built using HTML, CSS, JavaScript, and JSON.
 It helps students manage structured study sessions with a clean neon UI,
 smart queue system, progress tracking, and persistent data storage.
 
-------------------------------------------------------------------------
-
-## 📁 Project Structure
-
-smart-study-manager-pro/ │ ├── index.html ├── script.js ├── data.json
-└── README.md
 
 ------------------------------------------------------------------------
 
@@ -78,7 +72,7 @@ python -m http.server 8000
 3.  Open browser:
 
 http://localhost:8000
-
+![App Screenshot](preview.png)
 ------------------------------------------------------------------------
 
 ### Method 2: Using VS Code
