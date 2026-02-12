@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Manager Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button class="theme-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+
+    <div class="container">
+
+        <h1>Study Manager Pro</h1>
+
+        <h2 id="timer">00:00</h2>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="subjectList"></div>
+
+        <label>
+            <input type="checkbox" id="muteToggle"> Mute Alarm
+        </label>
+
+        <button id="startBtn" onclick="startSelected()">Start Selected</button>
+
+        <div class="analytics">
+            <h3>Analytics</h3>
+            <p>Total Subjects: <span id="totalSubjects"></span></p>
+            <p>Total Attempted Today: <span id="totalAttempted"></span></p>
+            <p>Total Completed Today: <span id="totalCompleted"></span></p>
+        </div>
+
+    </div>
+
+    <button class="floating-btn" onclick="toggleAddForm()">+</button>
+
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <h3>Add Subject</h3>
+            <input type="text" id="newName" placeholder="Subject Name">
+            <input type="number" id="newTime" placeholder="Minutes">
+            <button onclick="addSubject()">Add</button>
+        </div>
+    </div>
+
+    <footer>
+        Made with ❤ by Genius
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

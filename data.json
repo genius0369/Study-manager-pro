@@ -1,0 +1,8 @@
+{
+  "subjects": [
+    { "name": "Math", "duration": 60 },
+    { "name": "Physics", "duration": 60 },
+    { "name": "Chemistry", "duration": 60 },
+    { "name": "English", "duration": 45 }
+  ]
+}
