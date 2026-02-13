@@ -9,11 +9,27 @@
 
 <body>
 
-    <button class="theme-btn" onclick="toggleTheme()">🌙 Toggle Theme</button>
+
+<div class="clouds">
+    <div class="cloud x1"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+</div>
+
 
     <div class="container">
 
         <h1>Study Manager Pro</h1>
+
+        <!-- TOP CONTROL BAR -->
+        <div class="top-controls">
+            <button onclick="startSelected()">Start</button>
+            <button id="pauseBtn" onclick="pauseResume()">Pause</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="toggleAddForm()">+ Add Subject</button>
+        </div>
 
         <h2 id="timer">00:00</h2>
 
@@ -23,11 +39,9 @@
 
         <div id="subjectList"></div>
 
-        <label>
+        <label class="mute-option">
             <input type="checkbox" id="muteToggle"> Mute Alarm
         </label>
-
-        <button id="startBtn" onclick="startSelected()">Start Selected</button>
 
         <div class="analytics">
             <h3>Analytics</h3>
@@ -38,8 +52,7 @@
 
     </div>
 
-    <button class="floating-btn" onclick="toggleAddForm()">+</button>
-
+    <!-- ADD SUBJECT MODAL -->
     <div id="addModal" class="modal">
         <div class="modal-content">
             <h3>Add Subject</h3>
@@ -50,10 +63,11 @@
     </div>
 
     <footer>
-        Made with ❤ by Genius
+        <span>Made with ❤ by Genius</span>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
